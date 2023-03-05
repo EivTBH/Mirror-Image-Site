@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 6%;
+}
+
+.map-address-container {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  height: 350px;
+  margin-left: 8%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#map {
+  flex: 1;
+  margin-right: 20px;
+  height: 100%;
+}
+
+h2 {
+  color: #000000;
+  font-family: oswald;
+}
+
+.address {
+  flex: 1;
+  font-family: oswald;
+  text-align: left;
+  line-height: 25px;
+  color: #00c3ff;
+}
+
+form {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 900px;
+  font-family: oswald;
+  color: #00c3ff;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: oswald;
+  color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00c3ff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: oswald;
+}
+
+button {
+  background-color: #00c3ff;
+  font-family: oswald;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #00c3ff;
+  border: #00c3ff;
+  border-width: 2px;
+}
+
+@media (max-width: 768px) {
+  .map-address-container {
+    margin-top: 70%;
+
+    flex-direction: column;
+  }
+
+  #map {
+    justify-content: center;
+    align-items: center;
+    scale: 0.9;
+  }
+
+  .address {
+    font-family: oswald;
+    line-height: 5%;
+    margin-bottom: 20%;
+    margin-top: 15%;
+    margin-right: 0%;
+    padding-bottom: 5%;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    max-width: 80%;
+    margin-left: 8%;
+    padding-top: 50px;
+  }
+  button {
+    align-content: center;
+    text-align: center;
+  }
+}

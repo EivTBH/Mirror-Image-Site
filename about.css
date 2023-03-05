@@ -1,0 +1,80 @@
+html,
+body {
+  font-family: Arial, sans-serif;
+  /* margin-top: 35px; */
+  padding: 0;
+}
+
+.header2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  font-family: oswald;
+  color: #00c3ff;
+  padding: 8px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.photographer-profile img {
+  border: 2px solid #00c3ff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+section {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  margin-right: 20px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: oswald;
+  color: #00c3ff;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: oswald;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .header2 {
+    position: relative;
+    margin-top: 5%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: 1; */
+    font-family: oswald;
+    color: #00c3ff;
+    padding: 8px;
+    text-align: center;
+  }
+}

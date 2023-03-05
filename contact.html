@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Mirror Image Photography</title>
+    <!--Google Fonts: Oswald-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <!--Favicon-->
+    <link rel="icon" type="image/svg" href="images/LOGO.svg" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="logo-Wrapper">
+            <a href="index.html">
+              <img class="logoPic" src="images/LOGO.svg" alt="Logo"
+            /></a>
+            <a class="MirrorText" href="index.html">MIRROR IMAGE PHOTOGRAPHY</a>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="availability.html">AVAILABILITY</a></li>
+            <li><a href="about-us.html">ABOUT</a></li>
+            <li><a href="contact.html">| CONTACT |</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="linesplit2"></div>
+      <main>
+        <div class="container">
+          <div class="map-address-container">
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12726.902436765302!2d-12.296018656100026!3d-37.11164861645503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b11b0dfa0cd%3A0x5325435be8dc815e!2sTristan%20da%20Cunha%20Volcano!5e0!3m2!1sen!2suk!4v1677107150483!5m2!1sen!2suk"
+                width="500"
+                height="350"
+                allow="fullscreen"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="address">
+              <h2>Our Address:</h2>
+              <p>Tristan da Cunha Volcano</p>
+              <p>St Helena</p>
+              <p>TDCU 1ZZ</p>
+              <h2>Our Phone</h2>
+              <p>Send Smoke Signals</p>
+              <h2>Our Email</h2>
+              <p>tdcenquiries@tdc-gov.com</p>
+            </div>
+          </div>
+          <form>
+            <h2>Contact Us:</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <div class="linesplit"></div>
+    <footer class="sitemap">
+      <div class="sitemap-column">
+        <h3>SITE MAP</h3>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="portfolio.html">PORTFOLIOS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="contact.html">&nbsp;</a></li>
+        </ul>
+      </div>
+      <div class="sitemap-column">
+        <h3>&nbsp;</h3>
+        <ul>
+          <li><a href="availability.html">AVAILABILITY</a></li>
+          <li><a href="about-us.html">ABOUT</a></li>
+        </ul>
+      </div>
+      <div class="sitemap-column">
+        <h3>SOCIAL MEDIA</h3>
+        <ul>
+          <li>
+            <a href="http://www.twitter.com"
+              ><img class="twittersocial" src="images/twitter-logo.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="http://www.twitter.com"
+              ><img class="twittersocial" src="images/isntablue.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

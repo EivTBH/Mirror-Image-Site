@@ -1,0 +1,139 @@
+html,
+body {
+  height: 100%;
+}
+
+header {
+  height: 10vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: -250px;  */
+}
+
+.sitemap {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
+
+.sitemap-column {
+  flex: 1 0 calc(100% / 4 - 100px);
+  margin-right: 20px;
+  vertical-align: top;
+  flex-direction: column;
+}
+
+.sitemap-column:last-child {
+  margin-right: 0;
+}
+
+.sitemap-column h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: oswald;
+  text-align: center;
+}
+
+.sitemap-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.sitemap-column li {
+  margin-bottom: 5px;
+}
+
+.sitemap-column a {
+  font-family: oswald;
+  color: #00c3ff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.sitemap-column a:hover {
+  color: #333;
+}
+
+.twittersocial {
+  height: 25px;
+}
+
+.instasocial {
+  width: 3vh;
+}
+
+@media screen and (max-width: 768px) {
+  .sitemap-column {
+    flex-basis: calc(100% / 3 - 50px);
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0px;
+    vertical-align: middle;
+  }
+
+  .sitemap {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .wrapper {
+    min-height: 125%;
+  }
+
+  .sitemap {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 495px) {
+  .sitemap {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .wrapper {
+    min-height: 92%;
+  }
+  h3 {
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .sitemap-column h3 {
+    flex-basis: calc(100% / 3 - 50px);
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    font-size: 12px;
+  }
+
+  .sitemap-column a {
+    font-family: oswald;
+    color: #00c3ff;
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .twittersocial {
+    height: 15px;
+  }
+
+  .instasocial {
+    width: 2vh;
+  }
+}

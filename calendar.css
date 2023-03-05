@@ -1,0 +1,224 @@
+h1 {
+  text-align: center;
+  font-family: Oswald;
+  color: #00c3ff;
+}
+
+h3 {
+  font-size: 18pt;
+  color: #00c3ff;
+}
+
+.para {
+  margin: auto;
+}
+
+.calendar {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Oswald;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+  border: 2px solid #00c3ff;
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-family: Oswald;
+}
+
+.calendar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #00c3ff;
+  padding: 10px;
+}
+
+.calendar th {
+  background-color: #00c3ff;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.calendar td.other-month {
+  color: #00c3ff;
+}
+
+.calendar form {
+  display: inline-block;
+}
+
+.calendar label {
+  margin-right: 10px;
+}
+
+.calendar button {
+  background-color: #00c3ff;
+  color: white;
+  font-size: 16px;
+  font-family: Oswald;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Oswald;
+}
+
+input[type="date"] {
+  font-family: Oswald;
+  font-size: 16px;
+  color: #333;
+  width: 25%;
+  margin-right: 0%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  row-gap: 50px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  height: 30px;
+  align-content: center;
+  text-align: center;
+}
+
+.button2 {
+  /* margin: auto; */
+  margin-bottom: 2%;
+  margin-left: 45%;
+}
+
+.button2:hover {
+  background-color: #000000;
+  color: #00c3ff;
+  box-shadow: inset 0 0 0 0 #687375;
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.booking-form form .form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.booking-form form .form-row .dropdown {
+  margin-left: auto;
+}
+.dropdown {
+  display: flex;
+  height: 30px;
+  flex-direction: row;
+}
+
+.dropdown select {
+  border: 2px solid #00c3ff;
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-family: Oswald;
+}
+
+input {
+  font-family: Oswald;
+  font-size: 16px;
+  color: #333;
+  width: 70%;
+}
+
+select {
+  font-family: Oswald;
+  font-size: 16px;
+  color: #333;
+  border: thin solid;
+  background-color: #f2f2f2;
+  padding: 0px;
+  border-radius: 0px;
+}
+
+.form-row:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.form-row:nth-child(2) {
+  margin-top: 20px;
+}
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row:last-child {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+    font-family: Oswald;
+    margin-top: 50px;
+  }
+
+  .calendar {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+
+  .calendar h2 {
+    font-size: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    font-family: oswald;
+    text-align: center;
+    margin-right: auto;
+  }
+
+  .button2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: auto; */
+    margin: auto;
+    font-family: oswald;
+  }
+
+  select:hover {
+    background-color: #e6e6e6;
+  }
+
+  select:focus {
+    outline: none;
+    background-color: #d9d9d9;
+  }
+}
